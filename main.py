@@ -7,7 +7,7 @@ def image_to_ascii(image_path, output_path="ascii_output.txt", width=100):
     
     # Calculate new height to maintain aspect ratio
     aspect_ratio = image.height / image.width
-    new_height = int(aspect_ratio * width * 0.55)  # Adjust for ASCII proportions
+    new_height = int(aspect_ratio * width * 0.55)  
     
     # Resize the image
     image = image.resize((width, new_height))
